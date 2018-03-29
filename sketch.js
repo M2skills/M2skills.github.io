@@ -33,7 +33,25 @@ var start_game;
 var player1_Set, player2_Set;
 
 function setup(){
-    createCanvas(450, 450);
+    var canvas = createCanvas(450, 450);
+    txt = createDiv("<a href = 'https://github.com/M2skills/M2skills.github.io'>M2skills.github.io</a><br>" +
+                    "A simple project of tic tac toe. <br>" +
+                    "It is done using <b>p5.js</b> and some jquery. <br>" +
+                    "The game contains 4 bots : <br> <br>" +
+                    "<b>BOT 1</b> : Random bot that marks an <b>empty position randomly</b> using random function. <br>" +
+                    "<b>BOT 2</b> : This bot picks the <b>first empty position</b> and marks it.<br>" +
+                    "<b>BOT 3</b> : This bot is a <b>heuristic bot</b>, mostly hardcoded for certain scenarios, either wins or blocks other player. Techniques used for this bot can be easily found online, a strategy mentioned in <a href = 'https://www.wikihow.com/Win-at-Tic-Tac-Toe'>wikihow</a> page is very similar to the strategy used here. <br>" +
+                    "<b>BOT 4</b> : This bot uses <b>minimax algorithm</b> with depth of 3 and makes the best move (requires some correction though, failing for some cases)<br>" +
+                    "You can also choose to play against a bot or play with a friend <br>" +
+                    "<br>UI requires some work, IF you have any ideas please comment, fork and request merge. Any suggestion, corrections etc are most welcome. <br>" +
+                    "If you like this, please give the repository a star. <br>" +
+                    "Click <a href = 'https://github.com/M2skills/M2skills.github.io'><b>HERE</b></a> to view the Code. <br>" +
+                    "<br><b>References</b><br>" +
+                    "<a href = 'https://www.geeksforgeeks.org/minimax-algorithm-in-game-theory-set-3-tic-tac-toe-ai-finding-optimal-move/'>Minimax algorithm in game theory-set</a>" +
+                    "<br><a href = 'https://www.quora.com/Is-there-a-way-to-never-lose-at-Tic-Tac-Toe'>Is there a way to never lose at Tic Tac Toe</a> " +
+                    "<br><a href = 'http://alpha.editor.p5js.org/kenzo/sketches/ryE8i2Yp'>P5 Tic Tac Toe Sketch by Kenzo</a> " +
+                    "<br>Thanks!!<br>");
+    txt.position(550, 305);
     row = 3;
     col = 3;
     winner = 0;
